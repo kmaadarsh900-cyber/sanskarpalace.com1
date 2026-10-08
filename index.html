@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Sanskar Palace Banquet Hall, Bhusaula Danapur Chak, Bihar. A beautiful venue for weddings, receptions and special celebrations.">
+<title>SANSKAR PALACE BANQUET HALL | BHUSAULA, DANAPUR</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#171315;--wine:#511c2a;--gold:#c7a45b;--cream:#faf7f1;--muted:#6e6666}
+*{box-sizing:border-box;margin:0;padding:0;scroll-behavior:smooth}
+body{font-family:Montserrat,Arial,sans-serif;background:var(--cream);color:var(--ink)}
+h1,h2,h3,.brand,.display{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;text-transform:uppercase;letter-spacing:.045em}
+a{color:inherit;text-decoration:none}
+header{position:sticky;top:0;z-index:20;background:rgba(23,19,21,.97);border-bottom:1px solid #c7a45b66}
+.nav{max-width:1240px;margin:auto;padding:13px 5%;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{color:var(--gold);font-size:25px;line-height:1.02}
+.brand small{display:block;font:500 9px Montserrat,sans-serif;letter-spacing:.32em;color:#fff;margin-top:6px}
+nav{display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+nav a{color:#fff;font-size:10px;letter-spacing:.14em;text-transform:uppercase}
+nav a:hover{color:var(--gold)}
+.nav-cta,.btn{display:inline-block;background:var(--gold);color:#171315;padding:13px 20px;font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;border:1px solid var(--gold);transition:.25s}
+.btn:hover,.nav-cta:hover{background:transparent;color:var(--gold)}
+.hero{background:#171315;color:#fff;padding:52px 5% 70px}
+.hero-inner{max-width:1300px;margin:auto}
+.eyebrow{font-size:10px;letter-spacing:.34em;text-transform:uppercase;color:var(--gold);font-weight:600}
+.hero h1{font-size:clamp(44px,7vw,88px);line-height:.92;margin:16px 0 18px;max-width:900px}
+.hero h1 span{color:var(--gold)}
+.hero-copy{max-width:670px;color:#e0d9d8;line-height:1.8;font-size:13px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin:25px 0 34px}
+.btn-outline{background:transparent;color:#fff;border-color:#bda16b}
+.photo-grid{display:grid;grid-template-columns:1.25fr 1fr 1fr;grid-template-rows:230px 190px;gap:12px}
+.photo{overflow:hidden;position:relative;background:#30272a}
+.photo img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}
+.photo:hover img{transform:scale(1.04)}
+.photo:first-child{grid-row:span 2}
+.photo:nth-child(5){grid-column:2 / 4}
+.photo figcaption{position:absolute;bottom:0;left:0;right:0;padding:30px 14px 12px;background:linear-gradient(transparent,rgba(0,0,0,.75));color:#fff;font-size:9px;letter-spacing:.18em;text-transform:uppercase}
+.section{padding:82px 5%}
+.wrap{max-width:1160px;margin:auto}
+.section-heading{text-align:center;margin-bottom:40px}
+.section-heading .eyebrow{color:#8c6b2f}
+.section-heading h2{font-size:clamp(36px,5vw,56px);margin-top:8px}
+.rule{width:58px;height:2px;background:var(--gold);margin:15px auto}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.about-image{height:440px;overflow:hidden}
+.about-image img{width:100%;height:100%;object-fit:cover}
+.about h2{font-size:clamp(35px,4vw,50px);line-height:1;margin:12px 0 18px}
+p{line-height:1.85}
+.about p{font-size:13px;color:var(--muted);margin-bottom:14px}
+.pill-row{display:flex;flex-wrap:wrap;gap:9px;margin-top:23px}
+.pill{border:1px solid #dfd1b3;padding:10px 12px;font-size:10px;text-transform:uppercase;letter-spacing:.08em}
+.services{background:#f0e9df}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:#fff;padding:27px 24px;border-top:2px solid var(--gold)}
+.card .symbol{font-size:25px;color:var(--gold)}
+.card h3{font-size:25px;margin:12px 0 8px}
+.card p{font-size:12px;color:var(--muted)}
+.gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.gallery-grid figure{height:230px;overflow:hidden}
+.gallery-grid img{width:100%;height:100%;object-fit:cover;transition:.4s}
+.gallery-grid img:hover{transform:scale(1.04)}
+.contact{background:var(--wine);color:#fff}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:start}
+.contact h2{font-size:clamp(38px,5vw,58px);line-height:1;margin:12px 0 18px}
+.contact p{color:#e8dfe1;font-size:13px}
+.contact-details{margin-top:24px;display:grid;gap:15px;font-size:12px}
+.contact-details strong{display:block;color:var(--gold);font-size:10px;letter-spacing:.15em;margin-bottom:4px}
+.contact-card{background:#fff;color:var(--ink);padding:28px}
+.contact-card h3{font-size:27px;margin-bottom:15px}
+.contact-card input,.contact-card select,.contact-card textarea{width:100%;padding:13px;border:1px solid #e2ddd6;margin:0 0 12px;font:12px Montserrat,sans-serif;background:#fff}
+.contact-card textarea{min-height:95px;resize:vertical}
+.contact-card button{width:100%;cursor:pointer}
+.form-note{font-size:11px;color:#5b5353;margin-top:12px;display:none}
+footer{background:#171315;color:#cfc7c6;padding:28px 5%;text-align:center;font-size:10px;letter-spacing:.12em;text-transform:uppercase}
+footer span{color:var(--gold)}
+@media(max-width:850px){.nav{align-items:flex-start;flex-direction:column}.nav nav{gap:15px}.photo-grid{grid-template-columns:1fr 1fr;grid-template-rows:230px 170px 170px}.photo:first-child{grid-row:auto}.photo:nth-child(5){grid-column:auto}.about,.contact-grid{grid-template-columns:1fr}.cards{grid-template-columns:repeat(2,1fr)}.gallery-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:540px){.hero{padding-top:40px}.photo-grid{grid-template-columns:1fr 1fr;grid-template-rows:170px 135px 135px;gap:7px}.photo:first-child{grid-column:span 2}.photo:nth-child(5){grid-column:span 2}.section{padding:60px 5%}.about-image{height:300px}.cards{grid-template-columns:1fr}.gallery-grid figure{height:160px}.brand{font-size:23px}.nav nav{gap:12px}.nav nav a{font-size:9px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="nav">
+    <a class="brand" href="#home">SANSKAR PALACE<small>BANQUET HALL</small></a>
+    <nav aria-label="Main navigation">
+      <a href="#home">HOME</a><a href="#about">ABOUT</a><a href="#services">SERVICES</a><a href="#gallery">GALLERY</a><a href="#contact">CONTACT</a>
+      <a class="nav-cta" href="#contact">ENQUIRE NOW</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <div class="eyebrow">A BEAUTIFUL VENUE FOR YOUR BIG MOMENTS</div>
+    <h1>YOUR CELEBRATION.<br><span>OUR PALACE.</span></h1>
+    <p class="hero-copy">WELCOME TO SANSKAR PALACE BANQUET HALL — A WELCOMING VENUE FOR WEDDINGS, RECEPTIONS, FAMILY FUNCTIONS AND SPECIAL CELEBRATIONS IN BHUSAULA, DANAPUR, BIHAR.</p>
+    <div class="hero-actions"><a class="btn" href="#contact">PLAN YOUR EVENT</a><a class="btn btn-outline" href="tel:+919771707729">CALL 97717 07729</a></div>
+    <div class="photo-grid" aria-label="Sanskar Palace photo gallery">
+      <figure class="photo"><img src="photos/exterior.png" alt="Exterior of Sanskar Palace Banquet Hall"><figcaption>THE PALACE EXTERIOR</figcaption></figure>
+      <figure class="photo"><img src="photos/banquet-interior.png" alt="Banquet hall interior and seating"><figcaption>COMFORTABLE INDOOR SPACE</figcaption></figure>
+      <figure class="photo"><img src="photos/courtyard.png" alt="Open courtyard at the venue"><figcaption>OPEN COURTYARD</figcaption></figure>
+      <figure class="photo"><img src="photos/outdoor-event-space.png" alt="Outdoor event setup area"><figcaption>OUTDOOR CELEBRATIONS</figcaption></figure>
+      <figure class="photo"><img src="photos/logo.jpeg" alt="Sanskar Palace Banquet Hall logo"><figcaption>SANSKAR PALACE BANQUET HALL</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="wrap about">
+    <div class="about-image"><img src="photos/exterior.png" alt="Sanskar Palace Banquet Hall building"></div>
+    <div>
+      <div class="eyebrow">WELCOME TO SANSKAR PALACE</div>
+      <h2>MAKE EVERY MOMENT MEMORABLE</h2>
+      <p>SANSKAR PALACE BANQUET HALL OFFERS A GRACIOUS SETTING FOR YOUR IMPORTANT OCCASIONS. WITH INDOOR SPACE AND AN OPEN COURTYARD, THE VENUE CAN BE CONSIDERED FOR A RANGE OF FAMILY AND SOCIAL EVENTS.</p>
+      <p>CONTACT OUR TEAM TO DISCUSS YOUR EVENT DATE, GUEST REQUIREMENTS, DECORATION OPTIONS AND AVAILABLE ARRANGEMENTS.</p>
+      <div class="pill-row"><span class="pill">WEDDINGS</span><span class="pill">RECEPTIONS</span><span class="pill">FAMILY FUNCTIONS</span><span class="pill">CELEBRATIONS</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section services" id="services">
+  <div class="wrap">
+    <div class="section-heading"><div class="eyebrow">CELEBRATE WITH US</div><h2>OCCASIONS WE HOST</h2><div class="rule"></div></div>
+    <div class="cards">
+      <article class="card"><div class="symbol">✦</div><h3>WEDDINGS</h3><p>A welcoming venue for your wedding celebration and special family moments.</p></article>
+      <article class="card"><div class="symbol">✧</div><h3>RECEPTIONS</h3><p>Bring family and friends together for a memorable reception.</p></article>
+      <article class="card"><div class="symbol">❋</div><h3>ENGAGEMENTS</h3><p>Celebrate a new beginning in a venue suited to your occasion.</p></article>
+      <article class="card"><div class="symbol">✦</div><h3>BIRTHDAYS</h3><p>Mark birthdays and milestones with the people who matter most.</p></article>
+      <article class="card"><div class="symbol">✧</div><h3>FAMILY FUNCTIONS</h3><p>A place to gather for anniversaries and other family events.</p></article>
+      <article class="card"><div class="symbol">❋</div><h3>CUSTOM EVENTS</h3><p>Contact us to discuss your event needs and available arrangements.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="gallery">
+  <div class="wrap">
+    <div class="section-heading"><div class="eyebrow">A CLOSER LOOK</div><h2>OUR VENUE GALLERY</h2><div class="rule"></div></div>
+    <div class="gallery-grid">
+      <figure><img src="photos/exterior.png" alt="Banquet hall exterior"></figure>
+      <figure><img src="photos/banquet-interior.png" alt="Banquet hall lounge and interior"></figure>
+      <figure><img src="photos/courtyard.png" alt="Venue courtyard"></figure>
+      <figure><img src="photos/outdoor-event-space.png" alt="Outdoor event area"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="section contact" id="contact">
+  <div class="wrap contact-grid">
+    <div>
+      <div class="eyebrow">LET'S PLAN YOUR CELEBRATION</div>
+      <h2>GET IN TOUCH</h2>
+      <p>CALL US TO DISCUSS YOUR EVENT, CHECK AVAILABILITY AND ASK ABOUT VENUE ARRANGEMENTS.</p>
+      <div class="contact-details">
+        <div><strong>PHONE</strong><a href="tel:+919771707729">+91 97717 07729</a></div>
+        <div><strong>ADDRESS</strong>H23J+58Q, BHUSAULA DANAPUR CHAK, BIHAR 801505</div>
+        <div><strong>MAP</strong><a target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=H23J%2B58Q%2C%20Bhusaula%20Danapur%20Chak%2C%20Bihar%20801505">OPEN LOCATION IN GOOGLE MAPS ↗</a></div>
+      </div>
+      <div style="margin-top:25px"><a class="btn" href="https://wa.me/919771707729?text=Hello%20Sanskar%20Palace%2C%20I%20would%20like%20to%20enquire%20about%20an%20event." target="_blank" rel="noopener">ENQUIRE ON WHATSAPP</a></div>
+    </div>
+    <form class="contact-card" id="enquiryForm">
+      <h3>EVENT ENQUIRY</h3>
+      <input id="guestName" type="text" placeholder="YOUR NAME" required>
+      <input id="guestPhone" type="tel" placeholder="YOUR PHONE NUMBER" required>
+      <select id="eventType" required><option value="">SELECT EVENT TYPE</option><option>WEDDING</option><option>RECEPTION</option><option>ENGAGEMENT</option><option>BIRTHDAY</option><option>FAMILY FUNCTION</option><option>OTHER</option></select>
+      <input id="eventDate" type="date" aria-label="Event date">
+      <textarea id="eventMessage" placeholder="TELL US ABOUT YOUR EVENT"></textarea>
+      <button class="btn" type="submit">SEND ENQUIRY ON WHATSAPP</button>
+      <p class="form-note" id="formNote">YOUR ENQUIRY IS READY TO SEND IN WHATSAPP.</p>
+    </form>
+  </div>
+</section>
+</main>
+<footer>© <span id="year"></span> SANSKAR PALACE BANQUET HALL · BHUSAULA, DANAPUR, BIHAR</footer>
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+document.getElementById('enquiryForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  const name = document.getElementById('guestName').value.trim();
+  const phone = document.getElementById('guestPhone').value.trim();
+  const type = document.getElementById('eventType').value;
+  const date = document.getElementById('eventDate').value || 'NOT DECIDED';
+  const message = document.getElementById('eventMessage').value.trim() || 'No additional details';
+  const text = `Hello Sanskar Palace Banquet Hall,%0AName: ${encodeURIComponent(name)}%0APhone: ${encodeURIComponent(phone)}%0AEvent: ${encodeURIComponent(type)}%0ADate: ${encodeURIComponent(date)}%0ADetails: ${encodeURIComponent(message)}`;
+  document.getElementById('formNote').style.display = 'block';
+  window.open('https://wa.me/919771707729?text=' + text, '_blank', 'noopener');
+});
+</script>
+</body>
+</html>
